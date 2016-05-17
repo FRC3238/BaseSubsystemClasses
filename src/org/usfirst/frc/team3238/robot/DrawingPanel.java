@@ -1,3 +1,4 @@
+package org.usfirst.frc.team3238.robot;
 /**
 The DrawingPanel class provides a simple interface for drawing persistent
 images using a Graphics object.  An internal BufferedImage object is used
@@ -76,6 +77,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Vector;
+
 import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
 import javax.swing.Box;
@@ -94,6 +96,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JSlider;
+import javax.swing.JTextField;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import javax.swing.Timer;
@@ -103,7 +106,7 @@ import javax.swing.event.ChangeListener;
 import javax.swing.event.MouseInputListener;
 import javax.swing.filechooser.FileFilter;
 
-public final class DrawingPanel extends FileFilter
+public class DrawingPanel extends FileFilter
     implements ActionListener, MouseMotionListener, Runnable, WindowListener {
     // inner class to represent one frame of an animated GIF
     private static class ImageFrame {
@@ -1330,7 +1333,6 @@ public final class DrawingPanel extends FileFilter
             frame.setVisible(true);
             toFront(frame);
         }
-        
         // draws the given image onto the given graphics context
         public void drawImageFull(Graphics2D g2, BufferedImage image) {
             int iw = image.getWidth();
