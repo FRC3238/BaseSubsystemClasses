@@ -1,8 +1,6 @@
 package org.usfirst.frc.team3238.robot;
 
 
-// A program to demonstrate the use of JTextFields's
-//Import Statements
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
@@ -40,9 +38,7 @@ public class RobotWhisperer extends JFrame {
 			JOptionPane.showMessageDialog(null, disp);
 		}
 	}
-	//Main Program that starts Execution
 	public static void main(String args[]) {
 		RobotWhisperer test = new RobotWhisperer();
 		test.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
-}// End of class TextFieldTest
