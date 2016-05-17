@@ -7,5 +7,6 @@ package org.usfirst.frc.team3238.robot;
  * */
 public class Configuration {
 	public class Constants{}
-	public class misc{}
+	public class Ports{}
+	
 }
