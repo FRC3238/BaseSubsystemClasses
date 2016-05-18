@@ -26,14 +26,13 @@ public class RobotWhisperer extends JFrame {
 		for(int i = 0; i < pigeons.length; i++) {
 			complimentaryPigeons[i] = new JTextField(names.get(i), 10);
 			pigeons[i] = new JTextField(""+values.get(i),10);
+			container.add(complimentaryPigeons[i]);
+			container.add(pigeons[i]);
+			complimentaryPigeons[i].addActionListener(new TextHandler());
+			pigeons[i].addActionListener(new TextHandler());
 		}
-		jtfText1 = new JTextField(10);
-		container.add(jtfText1);
-		container.add(jtfUneditableText);
-		handler = new TextHandler();
-		jtfText1.addActionListener(handler);
-		jtfUneditableText.addActionListener(handler);
-		setSize(325, 100);
+		
+		setSize(325, 80+10*complimentaryPigeons.size());
 		setVisible(true);
 	}
 	
