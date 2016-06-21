@@ -11,7 +11,9 @@ public class Robot extends IterativeRobot {
     Chassis chassis;
     Debugger debugger;
     
-    public void robotInit() {}
+    public void robotInit() {
+        chassis = Configuration.misc.Chassis;
+    }
     public void autonomousInit() {}
     public void autonomousPeriodic() {}
     public void teleopPeriodic() {}
