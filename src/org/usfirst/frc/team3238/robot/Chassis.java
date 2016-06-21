@@ -61,8 +61,10 @@ public class Chassis {
 	
 	public void checkMotorExistence() {
 		for(int i = 0; i < DriveMotors.length; i++) 
-			if(DriveMotors[i] == null) 
+			if(DriveMotors[i] == null) {
 				log.error("Motor Invalid At Index: " + i, new NullPointerException());
+				log.error("Port set to: " + DriveMotors[i].getDeviceID());
+			}
 	}
 	
 	public void setSpeed(double speed) {
