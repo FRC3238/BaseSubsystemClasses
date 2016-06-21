@@ -5,7 +5,14 @@ package org.usfirst.frc.team3238.robot;
  * 
  * @version untested
  * */
+ import edu.wpi.first.wpilibj.IterativeRobot;
 public class Configuration {
-	public class Constants{}
-	public class misc{}
+	public class Constants{
+		int DriveMotorLeftFrontDeviceID = 0;
+	}
+	public class misc{
+		CANTalon DriveMotorLeftFront = new CANTalon(Configuration.Constants.DriveMotorLeftFrontDeviceID);
+		
+		//Shooter shooter = 
+	} 
 }
